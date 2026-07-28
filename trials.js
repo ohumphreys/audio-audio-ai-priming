@@ -1,3 +1,7 @@
+// TODO: randomization logic for each individual run, and then converting that randomization into an appropriate list of trials
+// the below is just filler example
+// most likely should create the tv_array here instead of bothering with an objects situation
+
 // One trial is created per target file. Prime files are paired in order
 // and reused cyclically if there are fewer primes than targets.
 const prime_files = [
@@ -15,9 +19,9 @@ const target_files = [
 // Set the lexical decision answer for each target file.
 // Extend this map as you add target files.
 const target_correct_map = {
-    "target1.wav": "NON-WORD",
-    "target2.wav": "NON-WORD",
-    "target3.wav": "WORD"
+    "target1.wav": TARGET_TYPES.nonword,
+    "target2.wav": TARGET_TYPES.nonword,
+    "target3.wav": TARGET_TYPES.word
 };
 
 let trial_objects = target_files.map((target_file, i) => {
