@@ -6,10 +6,6 @@ const jsPsych = initJsPsych({
     }
 });
 
-// TODO: figure out how to attach these to everything
-const subject_id = jsPsych.randomization.randomID(10);
-const filename = `${subject_id}.csv`;
-
 //all of the trials were created in trials.js, this now populates the timeline
 let timeline = [];
 
@@ -24,13 +20,16 @@ timeline.push(exit_survey);
 
 
 // TODO: data saving
+const subject_id = jsPsych.randomization.randomID(10);
+const filename = `${subject_id}.csv`;
+
 const save_data = {
-            type: jsPsychPipe,
-            action: "save",
-            experiment_id: "XXXXX", // TODO: replace with your experiment ID
-            filename: filename,
-            data_string: ()=>jsPsych.data.get().csv()
-        };
+  type: jsPsychPipe,
+  action: "save",
+  experiment_id: "A902rKEXAULc",
+  filename: filename,
+  data_string: ()=>jsPsych.data.get().csv()
+};
 
 timeline.push(save_data);
 
