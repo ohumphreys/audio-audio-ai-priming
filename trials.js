@@ -109,16 +109,68 @@ const timeline_variables_ready = (async () => {
 
 
 
-// TODO: consent trial
-const irb_trial = {
-    // Which plugin to use
+// consent trial
+const irb_intro = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: '<p><font size="3">We invite you to participate in a research study on language production and comprehension.</font></p>',
-    choices: ['Continue']
+    stimulus: `<p><font size="3">We invite you to participate in a research study on language comprehension.
+    <br>Please review the form on the next page prior to beginning the study.</font></p>`,
+    choices: ['Next']
 };
 
-// instructions trial - not able to progress for the first 4 seconds so people don't accidentally skip or rush through the instructions
+const irb_doc = {
+    type: jsPsychHtmlButtonResponse,
+    choices: ['Continue'],
+    stimulus: `
+    <div style="text-align: right; font-size: 10px; line-height: 1.5;"><br><br>Approval Date: April 16, 2024
+    <br>Expiration Date: Does Not Expire</div>
+    
+    <div class="irb-doc">Stanford University
+    <br><b>Nonmedical Human Participants Consent Form and Waiver of Documentation</b>
 
+    <br><br><b>STUDY TITLE:</b> Language Production and Comprehension Studies
+
+    <br><br><b>Protocol Director:</b> Meghan Sumner
+
+    <br><br><b>DESCRIPTION:</b> We invite you to participate in a research study on language production and comprehension.
+    In this experiment, you will complete a linguistic task online such as reading sentences or words, naming
+    pictures or describing scenes, making up sentences of your own, or participating in a simple language game.
+
+    <br><br><b>RISKS AND BENEFITS:</b> There are no known risks, costs, or discomforts in this study and this judgment
+    is based on a large body of experience with the same or similar procedures with people of similar ages,
+    sex, origins, etc. We cannot and do not guarantee or promise that you will receive any benefits from this
+    study. You will help us to understand how people recognize and perceive auditory stimuli.
+
+    <br><br><b>TIME INVOLVEMENT:</b> Your participation in this experiment will take less than one hour.
+
+    <br><br><b>PAYMENTS:</b> You will be paid for your participation at the posted rate, consisted with online payment
+    standards. Some of the items in this experiment/survey are designed solely to check if you are paying
+    attention. If you fail any of these attention checks, you will not be paid.
+
+    <br><br><b>SUBJECT'S RIGHTS:</b> If you have read this form and have decided to participate in this project, please
+    understand your participation is voluntary and you have the right to withdraw your consent or discontinue
+    participation at any time without penalty or loss of benefits to which you are otherwise entitled. You have
+    the right to refuse to answer particular questions. Your individual privacy will be maintained in all
+    published and written data resulting from the study.
+
+    <br><br><b>CONTACT INFORMATION:</b>
+    <br>Questions, Concerns, or Complaints: If you have any questions, concerns or complaints about this
+    research study, its procedures, risks and benefits, please contact Prof. Meghan Sumner at (650) 723-
+    4284.
+
+    <br><br>Independent Contact: If you are not satisfied with how this study is being conducted, or if you have any
+    concerns, complaints, or general questions about the research or your rights as a participant, please
+    contact the Stanford Institutional Review Board (IRB) to speak to someone independent of the research
+    team at (650)-723-2480 or toll free at 1-866-680-2906. You can also write to the Stanford IRB, Stanford
+    University, Stanford, CA 94305-5401 or email irbnonmed@stanford.edu.
+
+    <br><br><b>WAIVER OF DOCUMENTATION</b>
+    <br>If you agree to participate in this research, please continue to begin the study.<br><br>   </div>`
+}
+
+
+const irb_trial = [irb_intro, irb_doc]
+
+// instructions trial - not able to progress for the first 4 seconds so people don't accidentally skip or rush through the instructions
 const instructions_trial_pause = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `In this study, you will hear pairs of words. 

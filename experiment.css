@@ -16,3 +16,9 @@
 .option {
     font-size: 24px;
 }
+
+.irb-doc {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5;
+}
