@@ -1,0 +1,38 @@
+[
+    {
+        "prime": "esteem",
+        "target": "\u0283'i-\u0279\u0259s",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "pseudo",
+        "trial type": "practice",
+        "isprimed": "false"
+    },
+    {
+        "prime": "hike",
+        "target": "tonic",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "practice",
+        "isprimed": "false"
+    },
+    {
+        "prime": "crush",
+        "target": "soil",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "practice",
+        "isprimed": "false"
+    },
+    {
+        "prime": "caption",
+        "target": "p'\u025bb",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "pseudo",
+        "trial type": "practice",
+        "isprimed": "false"
+    }
+]

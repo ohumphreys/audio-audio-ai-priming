@@ -1,0 +1,902 @@
+[
+    {
+        "prime": "harsh",
+        "target": "mean",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "toad",
+        "target": "frog",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "pile",
+        "target": "stack",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "where",
+        "target": "when",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "hat",
+        "target": "head",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "damn",
+        "target": "it",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "smear",
+        "target": "smudge",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "loft",
+        "target": "bed",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "latch",
+        "target": "key",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "thick",
+        "target": "thin",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "glare",
+        "target": "stare",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "whom",
+        "target": "who",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "screw",
+        "target": "driver",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "fig",
+        "target": "newton",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "aunt",
+        "target": "uncle",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "door",
+        "target": "open",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "tune",
+        "target": "music",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "sub",
+        "target": "sandwich",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "dew",
+        "target": "morning",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "lace",
+        "target": "shoelace",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "plain",
+        "target": "simple",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "use",
+        "target": "abuse",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "bead",
+        "target": "necklace",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "wide",
+        "target": "narrow",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "lodge",
+        "target": "cabin",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "thinking",
+        "target": "brain",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "frosting",
+        "target": "cake",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "poem",
+        "target": "rhyme",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "remove",
+        "target": "take",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "surface",
+        "target": "top",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "princess",
+        "target": "prince",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "rigid",
+        "target": "stiff",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "defrost",
+        "target": "thaw",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "rhythm",
+        "target": "beat",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "saucer",
+        "target": "cup",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "secure",
+        "target": "safe",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "effect",
+        "target": "cause",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "moonlight",
+        "target": "night",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "failure",
+        "target": "success",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "implode",
+        "target": "explode",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "public",
+        "target": "private",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "kleenex",
+        "target": "tissue",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "lapel",
+        "target": "collar",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "climate",
+        "target": "weather",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "tulip",
+        "target": "flower",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "purpose",
+        "target": "reason",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "center",
+        "target": "middle",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "exit",
+        "target": "enter",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "asleep",
+        "target": "awake",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "actress",
+        "target": "actor",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "true"
+    },
+    {
+        "prime": "have",
+        "target": "protect",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "boiled",
+        "target": "own",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "weird",
+        "target": "eggs",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "noon",
+        "target": "sorry",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "frisk",
+        "target": "lunch",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "gate",
+        "target": "honor",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "sharp",
+        "target": "better",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "floor",
+        "target": "point",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "sack",
+        "target": "tile",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "date",
+        "target": "bag",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "fog",
+        "target": "time",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "rake",
+        "target": "mist",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "rod",
+        "target": "leaves",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "gulp",
+        "target": "reel",
+        "prime syllables": "1",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "worse",
+        "target": "swallow",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "parched",
+        "target": "minus",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "musk",
+        "target": "under",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "stream",
+        "target": "cologne",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "plus",
+        "target": "river",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "clown",
+        "target": "danger",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "gym",
+        "target": "funny",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "seem",
+        "target": "workout",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "dead",
+        "target": "appear",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "dig",
+        "target": "alive",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "roar",
+        "target": "shovel",
+        "prime syllables": "1",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "coward",
+        "target": "lion",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "cavern",
+        "target": "wimp",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "paris",
+        "target": "cave",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "college",
+        "target": "france",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "gander",
+        "target": "school",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "illness",
+        "target": "goose",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "pocket",
+        "target": "sick",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "carton",
+        "target": "jeans",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "village",
+        "target": "box",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "mammal",
+        "target": "town",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "crescent",
+        "target": "whale",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "charcoal",
+        "target": "search",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "again",
+        "target": "grill",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "wallet",
+        "target": "repeat",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "caution",
+        "target": "money",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "prestige",
+        "target": "moon",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "frustrate",
+        "target": "fence",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "checking",
+        "target": "annoy",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "outdoors",
+        "target": "account",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "beneath",
+        "target": "indoors",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "hopeless",
+        "target": "strange",
+        "prime syllables": "2",
+        "target syllables": "1",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "cowgirl",
+        "target": "homeless",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "regret",
+        "target": "cowboy",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "standard",
+        "target": "thirsty",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    },
+    {
+        "prime": "defend",
+        "target": "normal",
+        "prime syllables": "2",
+        "target syllables": "2",
+        "target type": "real",
+        "trial type": "critical",
+        "isprimed": "false"
+    }
+]
