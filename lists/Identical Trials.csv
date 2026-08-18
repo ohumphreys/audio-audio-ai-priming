@@ -54,7 +54,7 @@ ACT,t'i-səl,1,2,pseudo,filler,FALSE
 HANDS,k'ɑn-kɪnt,1,2,pseudo,filler,FALSE
 DIRT,m'ɝ-ŋɚ,1,2,pseudo,filler,FALSE
 BALL,k'æ-niz,1,2,pseudo,filler,FALSE
-SLEEP,ɪt-tɚ,1,2,pseudo,filler,FALSE
+SLEEP,'ɪt-tɚ,1,2,pseudo,filler,FALSE
 TENT,bl'ɔ-fi,1,2,pseudo,filler,FALSE
 DICE,m'eɪl-dɛn,1,2,pseudo,filler,FALSE
 KID,d'æ-sək,1,2,pseudo,filler,FALSE
@@ -71,7 +71,7 @@ CHAIN,w'ɑ-wɚ,1,2,pseudo,filler,FALSE
 GROOM,f'ɛs-nəs,1,2,pseudo,filler,FALSE
 BROAD,gʊl-n'aɪ,1,2,pseudo,filler,FALSE
 HUGE,b'ɛs-li,1,2,pseudo,filler,FALSE
-WEAVE,eɪ-səl,1,2,pseudo,filler,FALSE
+WEAVE,'eɪ-səl,1,2,pseudo,filler,FALSE
 VERSE,k'ɔɪn-di,1,2,pseudo,filler,FALSE
 FLOAT,l'eɪs-li,1,2,pseudo,filler,FALSE
 CREASE,ə-b'ɔk,1,2,pseudo,filler,FALSE
@@ -96,7 +96,7 @@ TEAR,sn'oʊ-ti,1,2,pseudo,filler,FALSE
 ZEST,d'ɑ-nɚt,1,2,pseudo,filler,FALSE
 PISSED,əd-n'ætʃ,1,2,pseudo,filler,FALSE
 PHASE,l'ɪ-zɪt,1,2,pseudo,filler,FALSE
-MISS,eɪ-bɑl,1,2,pseudo,filler,FALSE
+MISS,'eɪ-bɑl,1,2,pseudo,filler,FALSE
 SQUEAK,f'ɑ-pɪt,1,2,pseudo,filler,FALSE
 TOUCH,h'aɪ-l'æŋ,1,2,pseudo,filler,FALSE
 NUMBER,kw'id,2,1,pseudo,filler,FALSE
@@ -182,7 +182,7 @@ CORAL,ə-n'eɪn,2,2,pseudo,filler,FALSE
 EXTRA,ɪl-t'ɛl,2,2,pseudo,filler,FALSE
 MESSAGE,b'ʌ-kəs,2,2,pseudo,filler,FALSE
 ESSAY,l'æl-klədʒ,2,2,pseudo,filler,FALSE
-CASTLE,oʊ-kəm,2,2,pseudo,filler,FALSE
+CASTLE,'oʊ-kəm,2,2,pseudo,filler,FALSE
 GLORY,f'ɛɹ-gɚ,2,2,pseudo,filler,FALSE
 TELLER,sɚ-v'eɪk,2,2,pseudo,filler,FALSE
 IMPACT,d'ʌ-vəs,2,2,pseudo,filler,FALSE
@@ -193,11 +193,11 @@ WELCOME,f'aɪ-neɪl,2,2,pseudo,filler,FALSE
 SKILLET,k'ɑn-dɛld,2,2,pseudo,filler,FALSE
 HITCHHIKE,ɪn-z'oʊl,2,2,pseudo,filler,FALSE
 DECAY,f'ɪ-mɚ,2,2,pseudo,filler,FALSE
-BUSY,æs-wɑlt,2,2,pseudo,filler,FALSE
+BUSY,'æs-wɑlt,2,2,pseudo,filler,FALSE
 HOBO,w'ɛn-toʊ,2,2,pseudo,filler,FALSE
 SUBJECT,l'eɪl-nɪŋ,2,2,pseudo,filler,FALSE
 LANDSCAPE,w'æ-dən,2,2,pseudo,filler,FALSE
-CORRECT,aɪ-pəl,2,2,pseudo,filler,FALSE
+CORRECT,'aɪ-pəl,2,2,pseudo,filler,FALSE
 UPDATE,tʃ'ud-lət,2,2,pseudo,filler,FALSE
 LOW,SHRUB,1,1,real,filler,FALSE
 HALF,HUT,1,1,real,filler,FALSE

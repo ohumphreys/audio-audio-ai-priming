@@ -1,3 +1,6 @@
+const ISI_LENGTH = 500
+const ITI_LENGTH = 1000
+
 const INPUTS = Object.freeze({
     word: 'k',
     nonword: 'd'
@@ -14,3 +17,6 @@ const TARGET_TYPES = Object.freeze({
     word: "WORD",
     nonword: "NONWORD"
 })
+
+
+const VOICE_BEING_TESTED = 'WNM'

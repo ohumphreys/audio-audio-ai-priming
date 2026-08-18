@@ -2,38 +2,43 @@
 const jsPsych = initJsPsych({
     show_progress_bar: true,
     on_finish: function(data) {
-    window.location.href = 'finish.html';
+      jsPsych.data.displayData('csv');
+      // window.location.href = 'finish.html';
     }
 });
 
 //all of the trials were created in trials.js, this now populates the timeline
-let timeline = [];
+//practice_tvs/test_tvs are filled asynchronously (see trials.js), so we wait
+//for timeline_variables_ready before building/running the timeline.
+timeline_variables_ready.then(() => {
+    const timeline = [];
 
-timeline.push(irb_trial);
-// demographics survey
-// preload stimulus
-timeline.push(instructions_trial);
-// practice trials
-const critical_trials = create_priming_trials(jsPsych, trial_objects);
-timeline.push(critical_trials);
-timeline.push(exit_survey);
+    timeline.push(irb_trial);
+    timeline.push(preload_trial)
+    timeline.push(instructions_trial);
 
+    const practice_timeline = create_priming_trials(jsPsych, practice_tvs, false);
+    timeline.push(practice_timeline);
 
-// TODO: data saving
-const subject_id = jsPsych.randomization.randomID(10);
-const filename = `${subject_id}.csv`;
-
-const save_data = {
-  type: jsPsychPipe,
-  action: "save",
-  experiment_id: "A902rKEXAULc",
-  filename: filename,
-  data_string: ()=>jsPsych.data.get().csv()
-};
-
-timeline.push(save_data);
-
-//TODO: whether the demographics survey goes at the beginning or the end
+    const test_timeline = create_priming_trials(jsPsych, test_tvs, true);
+    timeline.push(test_timeline);
+    timeline.push(exit_survey);
 
 
-jsPsych.run(timeline);
+    // TODO: data saving
+    const subject_id = jsPsych.randomization.randomID(10);
+    const filename = `${subject_id}.csv`;
+
+    const save_data = {
+      type: jsPsychPipe,
+      action: "save",
+      experiment_id: "A902rKEXAULc",
+      filename: filename,
+      data_string: ()=>jsPsych.data.get().csv()
+    };
+
+    timeline.push(save_data);
+
+
+    jsPsych.run(timeline);
+});

@@ -496,7 +496,7 @@
     },
     {
         "prime": "sleep",
-        "target": "\u026at-t\u025a",
+        "target": "'\u026at-t\u025a",
         "prime syllables": "1",
         "target syllables": "2",
         "target type": "pseudo",
@@ -649,7 +649,7 @@
     },
     {
         "prime": "weave",
-        "target": "e\u026a-s\u0259l",
+        "target": "'e\u026a-s\u0259l",
         "prime syllables": "1",
         "target syllables": "2",
         "target type": "pseudo",
@@ -874,7 +874,7 @@
     },
     {
         "prime": "miss",
-        "target": "e\u026a-b\u0251l",
+        "target": "'e\u026a-b\u0251l",
         "prime syllables": "1",
         "target syllables": "2",
         "target type": "pseudo",
@@ -1648,7 +1648,7 @@
     },
     {
         "prime": "castle",
-        "target": "o\u028a-k\u0259m",
+        "target": "'o\u028a-k\u0259m",
         "prime syllables": "2",
         "target syllables": "2",
         "target type": "pseudo",
@@ -1747,7 +1747,7 @@
     },
     {
         "prime": "busy",
-        "target": "\u00e6s-w\u0251lt",
+        "target": "'\u00e6s-w\u0251lt",
         "prime syllables": "2",
         "target syllables": "2",
         "target type": "pseudo",
@@ -1783,7 +1783,7 @@
     },
     {
         "prime": "correct",
-        "target": "a\u026a-p\u0259l",
+        "target": "'a\u026a-p\u0259l",
         "prime syllables": "2",
         "target syllables": "2",
         "target type": "pseudo",
