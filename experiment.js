@@ -14,14 +14,20 @@ timeline_variables_ready.then(() => {
 
     timeline.push(prolific_id_trial)
     timeline.push(irb_trial);
-    timeline.push(preload_trial)
+    // preload stimulus trial
+    const preload_trial = {
+        type: jsPsychPreload,
+        audio: preload_files,
+        message: "Loading files . . ."
+    };
+    timeline.push(preload_trial);
     timeline.push(instructions_trial);
 
-    // const practice_timeline = create_priming_trials(jsPsych, practice_tvs, false);
-    // timeline.push(practice_timeline);
+    const practice_timeline = create_priming_trials(jsPsych, practice_tvs, false);
+    timeline.push(practice_timeline);
 
-    // const test_timeline = create_priming_trials(jsPsych, test_tvs, true);
-    // timeline.push(test_timeline);
+    const test_timeline = create_priming_trials(jsPsych, test_tvs, true);
+    timeline.push(test_timeline);
     timeline.push(exit_survey);
 
 

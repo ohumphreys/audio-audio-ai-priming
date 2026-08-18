@@ -95,15 +95,14 @@ async function create_timeline_variables(json_file, tv_array) {
 const practice_tvs = [];
 const test_tvs = [];
 
-//TODO: figure out how to increment which counterbalanced lists the user is on
-//for now I'm just always assuming counterbalanced list 1 as a temporary strategy
-let counterbalance_number = 1;
 
 // experiment.js awaits this promise before building/running the jsPsych timeline,
 // since fetching + parsing the trial lists above is asynchronous.
 const timeline_variables_ready = (async () => {
+    let counterbalance_number = await jsPsychPipe.getCondition("A902rKEXAULc");
+    counterbalance_number += 1;
     await create_timeline_variables("lists/Practice Trials.json", practice_tvs);
-    // await create_timeline_variables("lists/Identical Trials.json", test_tvs); TODO: uncomment this when I'm done testng
+    await create_timeline_variables("lists/Identical Trials.json", test_tvs);
     await create_timeline_variables(`lists/Counterbalance ${counterbalance_number.toString()}.json`, test_tvs);
 })();
 
@@ -211,14 +210,6 @@ const instructions_trial_finish = {
 };
 
 const instructions_trial = [instructions_trial_pause, instructions_trial_finish];
-
-
-//preload stimulus trial
-const preload_trial = {
-    type: jsPsychPreload,
-    audio: preload_files,
-    message: "Loading files . . ."
-};
 
 // Attaches a live readout of the current value to an html-slider-response trial's on_load
 function show_slider_value(suffix = '') {
