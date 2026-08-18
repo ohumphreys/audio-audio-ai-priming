@@ -26,9 +26,8 @@ function create_priming_trials(jsp, tvs, rand_order) {
                 choices: [INPUTS.word, INPUTS.nonword],
                 stimulus: jsp.timelineVariable('target_stimulus'),
                 response_allowed_while_playing: true,
-                // prompt: `REAL: <kbd>${INPUTS.word}</kbd> PSEUDO: <kbd>${INPUTS.nonword}</kbd>`,
                 trial_duration: 4000,
-                prompt: `<div class=\"option_container\"><div class=\"option\">PSEUDOWORD<br><br><b>D</b></div><div class=\"option\">WORD<br><br><b>K</b></div></div>`,
+                prompt: `<div class=\"option_container\"><div class=\"option\">PSEUDOWORD<br><br><b><kbd>${INPUTS.nonword}</kbd></b></div><div class=\"option\">WORD<br><br><b><kbd>${INPUTS.word}</kbd></b></div></div>`,
                 data: {
                     prime: jsp.timelineVariable('prime'),
                     target: jsp.timelineVariable('target'),
@@ -36,7 +35,8 @@ function create_priming_trials(jsp, tvs, rand_order) {
                     target_syllables: jsp.timelineVariable('target_syllables'),
                     target_type: jsp.timelineVariable('target_type'),
                     condition: jsp.timelineVariable('condition'),
-                    is_primed: jsp.timelineVariable('is_primed')
+                    is_primed: jsp.timelineVariable('is_primed'),
+                    voice: VOICE_BEING_TESTED
                 }
             },
             {
@@ -103,7 +103,7 @@ let counterbalance_number = 1;
 // since fetching + parsing the trial lists above is asynchronous.
 const timeline_variables_ready = (async () => {
     await create_timeline_variables("lists/Practice Trials.json", practice_tvs);
-    await create_timeline_variables("lists/Identical Trials.json", test_tvs);
+    // await create_timeline_variables("lists/Identical Trials.json", test_tvs); TODO: uncomment this when I'm done testng
     await create_timeline_variables(`lists/Counterbalance ${counterbalance_number.toString()}.json`, test_tvs);
 })();
 
@@ -175,9 +175,9 @@ const instructions_trial_pause = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `In this study, you will hear pairs of words. 
     Sometimes, the second word of the pair will be a REAL WORD (e.g., FOG). 
-    Other times, the second word of the pair will NOT be a real word. We call these PSEUDOWORDS (e.g., SHISS). 
+    Other times, the second word of the pair will NOT be a real word. We call these PSEUDOWORDS (e.g., PEEB). 
     For each pair, it is your job to tell us whether the second word of the pair is REAL or PSEUDO. 
-    If it is a REAL word, press <kbd>${INPUTS.word}</kbd>. If it is PSEUDO, press <kbd>${INPUTS.nonword}</kbd>. 
+    If it is a REAL word, press <b><kbd>${INPUTS.word}</kbd></b>. If it is PSEUDO, press <b><kbd>${INPUTS.nonword}</kbd></b>. 
     Please answer as quickly and accurately as possible.`,
     choices: [],
     trial_duration: 4000, // 4 seconds in ms,
@@ -206,27 +206,191 @@ const preload_trial = {
     message: "Loading files . . ."
 };
 
-// TODO: exit survey
-const exit_survey = {
-    type: jsPsychSurveyHtmlForm,
-    preamble: '<p><strong>Exit survey</strong></p><p>Please answer the questions below to finish the study.</p>',
-    html: `
-        <p>
-            <label for="age">Age:</label><br>
-            <input id="age" name="age" type="number" min="0" max="120" required />
-        </p>
-        <p>
-            <span>Gender:</span><br>
-            <label><input type="radio" name="gender" value="Woman" required /> Woman</label><br>
-            <label><input type="radio" name="gender" value="Man" /> Man</label><br>
-            <label><input type="radio" name="gender" value="Non-binary" /> Non-binary</label><br>
-            <label><input type="radio" name="gender" value="Prefer not to say" /> Prefer not to say</label>
-        </p>
-        <p>
-            <label for="language_background">Language background:</label><br>
-            <textarea id="language_background" name="language_background" rows="4" cols="50" required></textarea>
-        </p>
-    `,
-    button_label: 'Submit',
-    data: {task: 'exit_survey'}
-};
+// Making the exit survey
+
+// Attaches a live readout of the current value to an html-slider-response trial's on_load
+function show_slider_value(suffix = '') {
+    const slider = document.querySelector('input[type="range"]');
+    const display = document.createElement('div');
+    display.style.marginTop = '10px';
+    display.style.fontWeight = 'bold';
+    display.textContent = slider.value + suffix;
+    slider.parentElement.appendChild(display);
+    slider.addEventListener('input', function () {
+        display.textContent = this.value + suffix;
+    });
+}
+
+const demographics_A = {
+    type: jsPsychSurveyMultiChoice,
+    button_label: "Next",
+    questions: [
+        {
+            prompt: 'Which of the following best describes how you perceive the gender of the voice you heard during this study?',
+            name: 'Gender',
+            horizontal: false,
+            required: true,
+            options: ['Male', 'Female']
+        },
+        {
+            prompt: 'Which of the following best describes how you perceive the race of the voice you heard during this study?',
+            name: 'Race',
+            horizontal: false,
+            required: true,
+            options: ['White', 'Black or African American', 'Asian', 'American Indian or Alaska Native', 'Native Hawaiian or Other Pacific Islander', 'Another race or mixed race']
+        },
+        {
+            prompt: 'Which of the following best describes how you perceive the American region of the voice you heard during this study?',
+            name: 'Region',
+            horizontal: false,
+            required: true,
+            options: ['Southern', 'Non-Southern']
+        }
+    ],
+    data: {condition: 'exit_survey_demographics'}
+
+}
+
+const demographics_B = {
+    type: jsPsychHtmlSliderResponse,
+    stimulus: `<p>What age most closely matches how you perceive the voice you heard during this study?</p>`,
+    labels: ['0', '100'],
+    min: 0,
+    max: 100,
+    slider_start: 50,
+    step: 1,
+    require_movement: true,
+    button_label: 'Next',
+    on_load: () => show_slider_value(),
+    data: {
+        condition: 'exit_survey_age'
+    }
+}
+
+const attributes = {
+    type: jsPsychSurveyLikert,
+    preamble: 'Rate the extent to which you perceive the voice you heard during the study matches the following descriptions:',
+    button_label: 'Next',
+    questions: [
+        {
+            prompt: "Trustworthy",
+            labels: [
+                'Very Untrustworthy',
+                'Untrustworthy',
+                'Neutral',
+                'Trustworthy',
+                'Very Trustworthy'
+            ],
+            required: true
+        },
+        {
+            prompt: "Mature",
+            labels: [
+                'Very Immature',
+                'Immature',
+                'Neutral',
+                'Mature',
+                'Very Mature'
+            ],
+            required: true
+        },
+        {
+            prompt: "Friendly",
+            labels: [
+                'Very Unfriendly',
+                'Unfriendly',
+                'Neutral',
+                'Friendly',
+                'Very Friendly'
+            ],
+            required: true
+        },
+        {
+            prompt: "Intelligent",
+            labels: [
+                'Very Unintelligent',
+                'Unintelligent',
+                'Neutral',
+                'Intelligent',
+                'Very Intelligent'
+            ],
+            required: true
+        },
+        {
+            prompt: "Competent",
+            labels: [
+                'Very Incompetent',
+                'Incompetent',
+                'Neutral',
+                'Competent',
+                'Very Competent'
+            ],
+            required: true
+        }
+    ],
+    data: {condition: 'exit_survey_attributes'}
+}
+
+const naturalness = {
+    type: jsPsychHtmlSliderResponse,
+    stimulus: `<p>How natural-sounding did you perceive the voice you heard during this study to be?</p>`,
+    labels: ['0%', '100%'],
+    min: 0,
+    max: 100,
+    slider_start: 50,
+    step: 1,
+    require_movement: true,
+    button_label: 'Next',
+    on_load: () => show_slider_value('%'),
+    data: {
+        condition: 'exit_survey_naturalness'
+    }
+}
+
+const humanness = {
+    type: jsPsychHtmlSliderResponse,
+    stimulus: `<p>How human-sounding did you perceive the voice you heard during this study to be?</p>`,
+    labels: ['0%', '100%'],
+    min: 0,
+    max: 100,
+    slider_start: 50,
+    step: 1,
+    require_movement: true,
+    button_label: 'Next',
+    on_load: () => show_slider_value('%'),
+    data: {
+        condition: 'exit_survey_humanness'
+    }
+}
+
+const ai_sentiment = {
+    type: jsPsychSurveyLikert,
+    button_label: 'Finish',
+    questions: [
+        {
+            prompt: "To what extent do you support the development and usage of AI tools?",
+            labels: [
+                'Strongly Disapprove',
+                'Disapprove',
+                'Neutral',
+                'Approve',
+                'Strongly Approve'
+            ],
+            required: true
+        },
+        {
+            prompt: "To what extent do you support the use of artificially generated voices?",
+            labels: [
+                'Strongly Disapprove',
+                'Disapprove',
+                'Neutral',
+                'Approve',
+                'Strongly Approve'
+            ],
+            required: true
+        }
+    ],
+    data: {condition: 'exit_survey_sentiment'}
+}
+
+const exit_survey = [demographics_A, demographics_B, attributes, naturalness, humanness, ai_sentiment]

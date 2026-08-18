@@ -8,8 +8,7 @@ const jsPsych = initJsPsych({
 });
 
 //all of the trials were created in trials.js, this now populates the timeline
-//practice_tvs/test_tvs are filled asynchronously (see trials.js), so we wait
-//for timeline_variables_ready before building/running the timeline.
+//practice_tvs/test_tvs are filled asynchronously (see trials.js), so we wait for timeline_variables_ready before building/running the timeline.
 timeline_variables_ready.then(() => {
     const timeline = [];
 
