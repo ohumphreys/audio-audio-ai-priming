@@ -2,8 +2,8 @@
 const jsPsych = initJsPsych({
     show_progress_bar: true,
     on_finish: function(data) {
-      jsPsych.data.displayData('csv');
-      // window.location.href = 'finish.html';
+      // jsPsych.data.displayData('csv');
+      window.location.href = 'finish.html';
     }
 });
 
@@ -12,15 +12,16 @@ const jsPsych = initJsPsych({
 timeline_variables_ready.then(() => {
     const timeline = [];
 
+    timeline.push(prolific_id_trial)
     timeline.push(irb_trial);
     timeline.push(preload_trial)
     timeline.push(instructions_trial);
 
-    const practice_timeline = create_priming_trials(jsPsych, practice_tvs, false);
-    timeline.push(practice_timeline);
+    // const practice_timeline = create_priming_trials(jsPsych, practice_tvs, false);
+    // timeline.push(practice_timeline);
 
-    const test_timeline = create_priming_trials(jsPsych, test_tvs, true);
-    timeline.push(test_timeline);
+    // const test_timeline = create_priming_trials(jsPsych, test_tvs, true);
+    // timeline.push(test_timeline);
     timeline.push(exit_survey);
 
 

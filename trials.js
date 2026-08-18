@@ -107,6 +107,20 @@ const timeline_variables_ready = (async () => {
     await create_timeline_variables(`lists/Counterbalance ${counterbalance_number.toString()}.json`, test_tvs);
 })();
 
+// prolific ID
+const prolific_id_trial = {
+    type: jsPsychSurveyText,
+    questions: [
+        {
+            prompt: "Please enter your unique Prolific ID below.",
+            name: "Prolific ID"
+        }
+    ],
+    data: {
+        condition: 'prolific_id'
+    }
+}
+
 
 
 // consent trial
@@ -193,7 +207,7 @@ const instructions_trial_finish = {
     If it is a REAL word, press <kbd>${INPUTS.word}</kbd>. If it is PSEUDO, press <kbd>${INPUTS.nonword}</kbd>. 
     Please answer as quickly and accurately as possible.
     <br><br>When you're ready to begin, press the space bar.`,
-    choices: [" "]
+    choices: [" "],
 };
 
 const instructions_trial = [instructions_trial_pause, instructions_trial_finish];
@@ -205,8 +219,6 @@ const preload_trial = {
     audio: preload_files,
     message: "Loading files . . ."
 };
-
-// Making the exit survey
 
 // Attaches a live readout of the current value to an html-slider-response trial's on_load
 function show_slider_value(suffix = '') {
