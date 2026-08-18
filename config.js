@@ -20,5 +20,3 @@ const TARGET_TYPES = Object.freeze({
 
 
 const VOICE_BEING_TESTED = 'WNM'
-
-// test
