@@ -117,7 +117,8 @@ const prolific_id_trial = {
     ],
     data: {
         condition: 'prolific_id'
-    }
+    },
+    button_label: 'Submit'
 }
 
 
