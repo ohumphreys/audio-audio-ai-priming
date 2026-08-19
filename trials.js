@@ -168,8 +168,7 @@ const irb_doc = {
 
     <br><br><b>CONTACT INFORMATION:</b>
     <br>Questions, Concerns, or Complaints: If you have any questions, concerns or complaints about this
-    research study, its procedures, risks and benefits, please contact Prof. Meghan Sumner at (650) 723-
-    4284.
+    research study, its procedures, risks and benefits, please contact Prof. Meghan Sumner at (650) 723-4284.
 
     <br><br>Independent Contact: If you are not satisfied with how this study is being conducted, or if you have any
     concerns, complaints, or general questions about the research or your rights as a participant, please
