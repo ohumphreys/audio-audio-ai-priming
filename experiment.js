@@ -22,7 +22,6 @@ timeline_variables_ready.then(() => {
     };
     timeline.push(audio_test);
     timeline.push(preload_trial);
-    timeline.push(exit_survey);
     timeline.push(instructions_trial);
 
     const practice_timeline = create_priming_trials(jsPsych, practice_tvs, false);
