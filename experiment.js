@@ -12,12 +12,6 @@ const jsPsych = initJsPsych({
 timeline_variables_ready.then(() => {
     const timeline = [];
 
-    // adds these to every trial
-    jsPsych.data.addProperties({
-      counterbalance: counterbalance_number,
-      voice_used: VOICE_BEING_TESTED
-    });
-
     timeline.push(prolific_id_trial)
     timeline.push(irb_trial);
     // preload stimulus trial
@@ -26,7 +20,9 @@ timeline_variables_ready.then(() => {
         audio: preload_files,
         message: "Loading files . . .",
     };
+    timeline.push(audio_test);
     timeline.push(preload_trial);
+    timeline.push(exit_survey);
     timeline.push(instructions_trial);
 
     const practice_timeline = create_priming_trials(jsPsych, practice_tvs, false);
@@ -49,6 +45,12 @@ timeline_variables_ready.then(() => {
     };
 
     timeline.push(save_data);
+
+    // adds these to every trial
+    jsPsych.data.addProperties({
+      counterbalance: counterbalance_number,
+      voice_used: VOICE_BEING_TESTED
+    });
 
 
     jsPsych.run(timeline);

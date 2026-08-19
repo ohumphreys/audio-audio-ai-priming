@@ -183,6 +183,27 @@ const irb_doc = {
 
 const irb_trial = [irb_intro, irb_doc]
 
+// short tone used to confirm the participant's audio is working before the experiment begins
+const AUDIO_TEST_STIMULUS = "audio/audio_check_tone.wav";
+preload_files.push(AUDIO_TEST_STIMULUS);
+
+const audio_test_tone = {
+    type: jsPsychAudioButtonResponse,
+    stimulus: AUDIO_TEST_STIMULUS,
+    prompt: `<p>Please ensure you are able to clearly hear this test tone in your current environment.</p>
+    <p>Once you hear the test tone, use the button to proceed.</p>`,
+    choices: ["Replay Tone", "I heard the Tone"],
+    response_allowed_while_playing: false
+};
+
+// loops the tone trial until the participant confirms they heard it
+const audio_test = {
+    timeline: [audio_test_tone],
+    loop_function: function (data) {
+        return data.values()[0].response === 0;
+    }
+}
+
 // instructions trial - not able to progress for the first 4 seconds so people don't accidentally skip or rush through the instructions
 const instructions_trial_pause = {
     type: jsPsychHtmlKeyboardResponse,
@@ -226,7 +247,7 @@ function show_slider_value(suffix = '') {
 
 const survey_intro = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: `You have completed audio portion of this study. To finish, fill out a brief ending (~3 minutes) survey.`,
+    stimulus: `You have completed audio portion of this study. To finish, fill out a brief (~3 minutes) series of questions.`,
     choices: ['Continue']
 }
 
