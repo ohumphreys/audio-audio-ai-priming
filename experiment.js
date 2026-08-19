@@ -12,13 +12,19 @@ const jsPsych = initJsPsych({
 timeline_variables_ready.then(() => {
     const timeline = [];
 
+    // adds these to every trial
+    jsPsych.data.addProperties({
+      which_counterbalance: counterbalance_number,
+      voice_testing: VOICE_BEING_TESTED
+    });
+
     timeline.push(prolific_id_trial)
     timeline.push(irb_trial);
     // preload stimulus trial
     const preload_trial = {
         type: jsPsychPreload,
         audio: preload_files,
-        message: "Loading files . . ."
+        message: "Loading files . . .",
     };
     timeline.push(preload_trial);
     timeline.push(instructions_trial);

@@ -35,8 +35,7 @@ function create_priming_trials(jsp, tvs, rand_order) {
                     target_syllables: jsp.timelineVariable('target_syllables'),
                     target_type: jsp.timelineVariable('target_type'),
                     condition: jsp.timelineVariable('condition'),
-                    is_primed: jsp.timelineVariable('is_primed'),
-                    voice: VOICE_BEING_TESTED
+                    is_primed: jsp.timelineVariable('is_primed')
                 }
             },
             {
