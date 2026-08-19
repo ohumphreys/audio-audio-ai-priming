@@ -37,7 +37,6 @@ timeline_variables_ready.then(() => {
     timeline.push(exit_survey);
 
 
-    // TODO: data saving
     const subject_id = jsPsych.randomization.randomID(10);
     const filename = `${subject_id}.csv`;
 

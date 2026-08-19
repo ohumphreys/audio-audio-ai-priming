@@ -224,6 +224,12 @@ function show_slider_value(suffix = '') {
     });
 }
 
+const survey_intro = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: `You have completed audio portion of this study. To finish, fill out a brief ending (~3 minutes) survey.`,
+    choices: ['Continue']
+}
+
 const demographics_A = {
     type: jsPsychSurveyMultiChoice,
     button_label: "Next",
@@ -247,7 +253,7 @@ const demographics_A = {
             name: 'Region',
             horizontal: false,
             required: true,
-            options: ['Southern', 'Non-Southern']
+            options: ['Non-Southern', 'Southern']
         }
     ],
     data: {condition: 'exit_survey_demographics'}
@@ -272,7 +278,7 @@ const demographics_B = {
 
 const attributes = {
     type: jsPsychSurveyLikert,
-    preamble: 'Rate the extent to which you perceive the voice you heard during the study matches the following descriptions:',
+    preamble: '<b>Rate the extent to which you perceive the voice you heard during the study to match the following descriptions:</b>',
     button_label: 'Next',
     questions: [
         {
@@ -396,4 +402,4 @@ const ai_sentiment = {
     data: {condition: 'exit_survey_sentiment'}
 }
 
-const exit_survey = [demographics_A, demographics_B, attributes, naturalness, humanness, ai_sentiment]
+const exit_survey = [survey_intro, demographics_A, demographics_B, attributes, naturalness, humanness, ai_sentiment]
