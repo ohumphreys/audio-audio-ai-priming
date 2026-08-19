@@ -244,7 +244,7 @@ LAUGH,JOURNEY,1,2,real,filler,FALSE
 MUG,UNLOAD,1,2,real,filler,FALSE
 LOSS,MONKEY,1,2,real,filler,FALSE
 BRICK,ATTEND,1,2,real,filler,FALSE
-DO,COMPACT,1,2,real,filler,FALSE
+SQUARE,COMPACT,1,2,real,filler,FALSE
 AIR,UNTRUE,1,2,real,filler,FALSE
 GRAPE,RETREAT,1,2,real,filler,FALSE
 FOAM,BARGAIN,1,2,real,filler,FALSE
