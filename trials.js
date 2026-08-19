@@ -97,8 +97,9 @@ const test_tvs = [];
 
 // experiment.js awaits this promise before building/running the jsPsych timeline,
 // since fetching + parsing the trial lists above is asynchronous.
+let counterbalance_number;
 const timeline_variables_ready = (async () => {
-    let counterbalance_number = await jsPsychPipe.getCondition("A902rKEXAULc");
+    counterbalance_number = await jsPsychPipe.getCondition("A902rKEXAULc");
     counterbalance_number += 1;
     await create_timeline_variables("lists/Practice Trials.json", practice_tvs);
     await create_timeline_variables("lists/Identical Trials.json", test_tvs);

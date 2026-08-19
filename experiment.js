@@ -14,8 +14,8 @@ timeline_variables_ready.then(() => {
 
     // adds these to every trial
     jsPsych.data.addProperties({
-      which_counterbalance: counterbalance_number,
-      voice_testing: VOICE_BEING_TESTED
+      counterbalance: counterbalance_number,
+      voice_used: VOICE_BEING_TESTED
     });
 
     timeline.push(prolific_id_trial)
