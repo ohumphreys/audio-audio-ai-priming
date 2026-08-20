@@ -26,7 +26,7 @@ function create_priming_trials(jsp, tvs, rand_order) {
                 choices: [INPUTS.word, INPUTS.nonword],
                 stimulus: jsp.timelineVariable('target_stimulus'),
                 response_allowed_while_playing: true,
-                trial_duration: 3000,
+                trial_duration: MAX_RESPONSE_TIME,
                 prompt: `<div class=\"option_container\"><div class=\"option\">PSEUDOWORD<br><br><b><kbd>${INPUTS.nonword}</kbd></b></div><div class=\"option\">WORD<br><br><b><kbd>${INPUTS.word}</kbd></b></div></div>`,
                 data: {
                     prime: jsp.timelineVariable('prime'),
