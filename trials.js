@@ -183,6 +183,12 @@ const irb_doc = {
 
 const irb_trial = [irb_intro, irb_doc]
 
+const headphone_confirmation = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: "<p> Headphones are required for this experiment . Please only continue if you are currently wearing headphones. </p>",
+    choices: ["Continue"]
+}
+
 // short tone used to confirm the participant's audio is working before the experiment begins
 const AUDIO_TEST_STIMULUS = "audio/audio_check_tone.wav";
 preload_files.push(AUDIO_TEST_STIMULUS);
@@ -190,7 +196,7 @@ preload_files.push(AUDIO_TEST_STIMULUS);
 const audio_test_tone = {
     type: jsPsychAudioButtonResponse,
     stimulus: AUDIO_TEST_STIMULUS,
-    prompt: `<p>Please ensure you are able to clearly hear this test tone in your current environment.</p>
+    prompt: `<p>Please ensure you are able to clearly hear this test tone and that the volume is appropriate in your current environment.</p>
     <p>Once you hear the test tone, use the button to proceed.</p>`,
     choices: ["Replay Tone", "I heard the Tone"],
     response_allowed_while_playing: false

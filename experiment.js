@@ -20,6 +20,7 @@ timeline_variables_ready.then(() => {
         audio: preload_files,
         message: "Loading files . . .",
     };
+    timeline.push(headphone_confirmation);
     timeline.push(audio_test);
     timeline.push(preload_trial);
     timeline.push(instructions_trial);
