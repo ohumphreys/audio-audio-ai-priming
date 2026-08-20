@@ -1,5 +1,5 @@
 const ISI_LENGTH = 500
-const ITI_LENGTH = 1000
+const ITI_LENGTH = 2000
 
 const INPUTS = Object.freeze({
     word: 'k',
