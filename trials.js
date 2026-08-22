@@ -60,16 +60,11 @@ async function create_timeline_variables(json_file, tv_array) {
     const data = await fetch(json_file).then(r => r.json())
 
     for (const trial of data) {
+        const target_filename = trial.target.charAt(0).toUpperCase() + trial.target.toLowerCase().slice(1);
+        const prime_filename = trial.prime.charAt(0).toUpperCase() + trial.prime.toLowerCase().slice(1);
 
-        const target_type = trial["target type"];
-
-        const target_filename = target_type === "real"
-            ? trial.target.charAt(0).toUpperCase() + trial.target.slice(1)
-            : trial.target;
-        const prime_filename = trial.prime.charAt(0).toUpperCase() + trial.prime.slice(1);
-
-        const target_stim = `audio/${VOICE_BEING_TESTED}/${target_filename}.mp3`
-        const prime_stim = `audio/${VOICE_BEING_TESTED}/${prime_filename}.mp3`
+        const target_stim = `audio/${VOICE_BEING_TESTED}/${target_filename}.wav`
+        const prime_stim = `audio/${VOICE_BEING_TESTED}/${prime_filename}.wav`
 
         preload_files.push(target_stim, prime_stim)
 
@@ -78,7 +73,7 @@ async function create_timeline_variables(json_file, tv_array) {
             target: trial["target"],
             prime_syllables: trial["prime syllables"],
             target_syllables: trial["target syllables"],
-            target_type: target_type,
+            target_type: trial['target_type'],
             //renamed from trial_type to condition because jsPsych uses trial_type natively so it gets overriden
             condition: trial["trial type"],
             is_primed: trial["isprimed"],
