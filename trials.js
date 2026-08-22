@@ -215,7 +215,7 @@ const instructions_trial_pause = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `In this study, you will hear pairs of words. 
     Sometimes, the second word of the pair will be a REAL WORD (e.g., FOG). 
-    Other times, the second word of the pair will NOT be a real word. We call these PSEUDOWORDS (e.g., PEEB). 
+    Other times, the second word of the pair will NOT be a real word. We call these PSEUDOWORDS (e.g., SHISS). 
     For each pair, it is your job to tell us whether the second word of the pair is REAL or PSEUDO. 
     If it is a REAL word, press <b><kbd>${INPUTS.word}</kbd></b>. If it is PSEUDO, press <b><kbd>${INPUTS.nonword}</kbd></b>. 
     Please answer as quickly and accurately as possible.`,
